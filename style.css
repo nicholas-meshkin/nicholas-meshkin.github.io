@@ -1,0 +1,90 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 25px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+
+.container{
+  display: grid;
+  width:95%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: auto;
+  grid-template-areas:
+    "nav nav nav nav"
+  "title title title title"
+  "p1 p1 p1 p1"
+    "p2 p2 p2 p2"
+    "p3 p3 p3 p3"
+    "footer footer footer footer";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.links{
+  grid-area: nav;
+}
+.links ul {
+  padding: 1% 1% 1%;
+  margin: 0;
+  background-color: rgb(180, 228, 232);
+}
+.links ul li{
+  display: inline-block;
+  text-align: center;
+  font-family: Arial;
+  width: 24%;
+  font-size: 24px;
+  font-weight: bold;
+}
+.links ul li a{
+  color: rgb(6, 68, 26);
+  text-decoration: none;
+  border-radius: 25px;
+  background-color:rgb(211, 211, 194);
+  padding: 0 5px 0 5px;
+}
+.links ul li a:hover{
+  background-color: rgb(223, 226, 38);
+  color: rgb(64, 33, 198);
+  transition: .25s;
+}
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+.title {
+  grid-area: title;
+  text-align: center;
+}
+.p1{
+  grid-area: p1;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p2{
+  grid-area: p2;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p3{
+  grid-area: p3;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer{
+  grid-area: footer;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
